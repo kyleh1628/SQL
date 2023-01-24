@@ -1,0 +1,22 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+insert into store values (1, "classic", 0);
+insert into store values (2, "shorty", 200);
+insert into store values (3, "frenzy", 450);
+insert into store values (4, "ghost", 500);
+insert into store values (5, "sheriff", 800);
+insert into store values (6, "stinger", 950);
+insert into store values (7, "spectre", 1600);
+insert into store values (8, "bucky", 850);
+insert into store values (9, "judge", 1850);
+insert into store values (10, "bulldog", 2100);
+insert into store values (11, "guardian", 2250);
+insert into store values (12, "phantom", 2900);
+insert into store values (13, "vandal", 2900);
+insert into store values (14, "marshal", 950);
+insert into store values (15, "operator", 4500);
+insert into store values (16, "ares", 1650);
+insert into store values (17, "odin", 3200);
+
+--display database and sum of all items
+select * from store order by price;
+select sum(price) from store;
